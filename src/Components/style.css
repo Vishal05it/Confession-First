@@ -3,26 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body,
+html {
   overflow-x: hidden;
-  min-width: 100vh;
+  overflow-y: auto;
 }
 .mainSect {
   width: 100vw;
   background-image: radial-gradient(purple, violet);
   display: flex;
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  background-attachment: fixed;
+
   gap: 30px;
   padding: 20px;
   p {
     font-family: sans-serif;
     font-size: 30px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.2;
     color: white;
+
     text-shadow: 0px 0px 7px gold;
     -webkit-text-stroke: 0.1px black;
     font-weight: 600;
@@ -44,7 +48,23 @@ body {
     }
   }
 }
-@keyframes showPara {
+h2 {
+  color: white;
+  /* color: rgba(255, 192, 203, 0.742); */
+  /* -webkit-text-stroke: 0.1px black; */
+  text-shadow: 0 0 4px black;
+}
+@keyframes showParaX {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showParaY {
   0% {
     opacity: 0;
     transform: translateY(100%);
@@ -76,5 +96,16 @@ body {
     bottom: 7.5%;
     transform-origin: bottom;
     transform: scaleX(-1) rotate(-55deg);
+  }
+}
+@keyframes squishing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
   }
 }

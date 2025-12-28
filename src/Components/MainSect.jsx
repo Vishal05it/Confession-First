@@ -25,6 +25,8 @@ function MainSect() {
   let [x, setX] = useState(0);
   let [showTareef, setTareef] = useState("none");
   let [imgHt, setImgHt] = useState(0);
+  let [currSong, setSong] = useState();
+
   return (
     <>
       <section
@@ -70,6 +72,7 @@ function MainSect() {
           <div className="wrapper wrap1" ref={wrap1}></div>
           <div className="wrapper wrap2" ref={wrap2}></div>
         </span>
+
         <img
           id="lock"
           src={lock}
@@ -167,16 +170,15 @@ function MainSect() {
             * You're everything I've ever wanted...No wait.. You're way more
             than I have ever wanted <img src="" alt="" />
           </p>
-          <a
-            id="clickBtn"
-            target="_blank"
-            style={{ display: open }}
-            onClick={(e) => {
-              setTareef("block");
-              e.target.style.animation = "vanishBtn 1.2s linear 1 forwards";
-            }}
-          >
-            <NavLink id="navLink" to="/tareef">
+          <a id="clickBtn" target="_blank" style={{ display: open }}>
+            <NavLink
+              id="navLink"
+              to="/tareef"
+              onClick={(e) => {
+                setTareef("block");
+                e.target.style.animation = "vanishBtn 1.2s linear 1 forwards";
+              }}
+            >
               Click here for more Tareef !
             </NavLink>
           </a>

@@ -3,6 +3,7 @@ import "./App.css";
 import MainSect from "./Components/MainSect";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Tareef from "./Components/Tareef";
+import song from "./Tu itni Khoobsurat Hai Reloaded - Prakriti Kakar _ Amjad Nadeem _ Jubin Nautiyal _ Gaurav Jang(M4A_128K).mp4";
 function App() {
   return (
     <>
