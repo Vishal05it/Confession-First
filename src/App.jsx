@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<MainSect />} />
           <Route path="/tareef" element={<Tareef />} />
         </Routes>
-        <Outlet />
+        {/* <Outlet /> */}
       </BrowserRouter>
     </>
   );
