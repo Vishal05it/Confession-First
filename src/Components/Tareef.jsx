@@ -1,16 +1,24 @@
 import React from "react";
 import "./TareefPage/style.css";
-import { Routes } from "react-router-dom";
+
 import rosePic from "./Styles/rose_PNG66731-removebg-preview.png";
 function Tareef() {
   return (
     <>
-      <section class="mainSect">
-        <p>
+      <section className="mainSect">
+        <p
+          style={{
+            animation: `showPara 1.2s linear 1 forwards`,
+          }}
+        >
           * You have all the qualities a man wants in his woman, <br />
           not just the physical beauty, but the inner beauty :
         </p>
-        <div>
+        <div
+          style={{
+            animation: `showPara 1.2s linear 1 forwards`,
+          }}
+        >
           <p>Good Nature</p>
           <p>Caring</p>
           <p>Loyal</p>

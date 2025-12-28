@@ -6,7 +6,6 @@ import hrtImg from "./Styles/heart-removebg-preview.png";
 import rosePic from "./Styles/rose_PNG66731-removebg-preview.png";
 import sparkles from "./Styles/clearSparkles-removebg-preview.png";
 import SparkleBox from "./SparkleBox";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Tareef from "./Tareef";
 function MainSect() {
@@ -173,6 +172,7 @@ function MainSect() {
             style={{ display: open }}
             onClick={(e) => {
               setTareef("block");
+              e.target.style.animation = "vanishBtn 1.2s linear 1 forwards";
             }}
           >
             <NavLink id="navLink" to="/tareef" target="_blank">
