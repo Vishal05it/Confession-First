@@ -5,9 +5,9 @@ import keyImg from "./vintage-heart-shaped-key-symbolizing-love-and-romance-png.
 import hrtImg from "./Styles/heart-removebg-preview.png";
 import rosePic from "./Styles/rose_PNG66731-removebg-preview.png";
 import sparkles from "./Styles/clearSparkles-removebg-preview.png";
-import SparkleBox from "./SparkleBox";
+
 import { NavLink } from "react-router-dom";
-import Tareef from "./Tareef";
+
 function MainSect() {
   let wrap1 = useRef();
   let wrap2 = useRef();
@@ -169,13 +169,14 @@ function MainSect() {
           </p>
           <a
             id="clickBtn"
+            target="_blank"
             style={{ display: open }}
             onClick={(e) => {
               setTareef("block");
               e.target.style.animation = "vanishBtn 1.2s linear 1 forwards";
             }}
           >
-            <NavLink id="navLink" to="/tareef" target="_blank">
+            <NavLink id="navLink" to="/tareef">
               Click here for more Tareef !
             </NavLink>
           </a>
