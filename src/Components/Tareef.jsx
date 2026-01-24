@@ -30,7 +30,7 @@ function Tareef() {
           <p>Dayalu</p>
           <p>Listener</p>
           <p>Loving</p>
-          <p>Romantic</p>
+          {/* <p>Romantic</p> */}
           <p>My Comfort zone</p>
           <p>Ambitious</p>
           <p>Vibe Matching</p>
