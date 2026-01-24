@@ -44,9 +44,12 @@ function Tareef() {
             zIndex: "3",
             animation: "squishing 2s linear infinite ",
             fontFamily: "sans-serif",
+            maxWidth: "600px",
+            paddingBottom: "10px",
           }}
         >
-          Thanks for coming into my life Mrs. Tiwari{" "}
+          Thanks for coming into my life Mrs. Tiwari I will always respect you
+          and your family
           <img
             src={hrtImg}
             style={{
@@ -65,7 +68,7 @@ function Tareef() {
               left: "-25%",
               width: "150%",
               backgroundColor: "rgba(255, 192, 203, 0.742)",
-              height: "100%",
+              height: "150%",
               zIndex: "-1",
               padding: "30px 100px",
               borderRadius: "10px",

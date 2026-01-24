@@ -5,7 +5,7 @@ import keyImg from "./vintage-heart-shaped-key-symbolizing-love-and-romance-png.
 import hrtImg from "./Styles/heart-removebg-preview.png";
 import rosePic from "./Styles/rose_PNG66731-removebg-preview.png";
 import sparkles from "./Styles/clearSparkles-removebg-preview.png";
-import song from "./Tu itni Khoobsurat Hai Reloaded - Prakriti Kakar _ Amjad Nadeem _ Jubin Nautiyal _ Gaurav Jang(M4A_128K).mp4";
+import song from "../TujhMeRab.mp4";
 import { NavLink } from "react-router-dom";
 
 function MainSect() {
@@ -46,7 +46,7 @@ function MainSect() {
           }, 1100);
         }}
       >
-        <video src={song} autoPlay loop controls></video>
+        <audio src={song} controls autoPlay loop></audio>
         <img src={keyImg} alt="" id="keyPic" ref={key} />
         <div
           id="imgDiv"
