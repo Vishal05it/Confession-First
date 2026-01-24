@@ -46,7 +46,6 @@ function MainSect() {
           }, 1100);
         }}
       >
-        <audio src={song} controls autoPlay loop></audio>
         <img src={keyImg} alt="" id="keyPic" ref={key} />
         <div
           id="imgDiv"
