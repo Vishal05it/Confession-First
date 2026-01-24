@@ -6,14 +6,16 @@ import Tareef from "./Components/Tareef";
 import song from "./TujhMeRab.mp4";
 function App() {
   useEffect(() => {
+    let htmlTag = document.querySelector("html");
     let mainSong = document.querySelector("audio");
-    mainSong.src = song;
+    htmlTag.addEventListener("click", () => {
+      mainSong.play();
+    });
     mainSong.autoplay = true;
-    //mainSong.controls = true;
   }, []);
   return (
     <>
-      <audio autoPlay loop></audio>
+      <audio src={song} autoPlay loop></audio>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainSect />} />
